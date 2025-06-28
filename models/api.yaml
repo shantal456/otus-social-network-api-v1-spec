@@ -5,13 +5,13 @@ info:
 servers:
   - url: http://localhost:8080
 tags:
-  - name: OtusSocialNetworkAPI
+  - name: OtusSocialNetwork
     description: otus-social-network service API
 paths:
   /login:
     post:
       tags:
-        - OtusSocialNetworkAPI
+        - OtusSocialNetwork
       summary: Аутентификация пользователя
       operationId: login
       description: Упрощенный процесс аутентификации путем передачи идентификатор пользователя и получения токена для дальнейшего прохождения авторизации
@@ -48,7 +48,7 @@ paths:
   /user/register:
     post:
       tags:
-        - OtusSocialNetworkAPI
+        - OtusSocialNetwork
       summary: Регистрация нового пользователя
       operationId: register
       description: Регистрация нового пользователя
@@ -95,7 +95,7 @@ paths:
   /user/get/{id}:
     get:
       tags:
-        - OtusSocialNetworkAPI
+        - OtusSocialNetwork
       summary: Получение анкеты пользователя
       operationId: getUser
       description: Получение анкеты пользователя
